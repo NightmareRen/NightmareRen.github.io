@@ -1,1 +1,1 @@
-Hi im a jewish guy who likes minecraft, roblox and brawl stars
+Hi im a dude who likes minecraft, roblox and brawl stars
