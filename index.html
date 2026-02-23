@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gary's Gaming Hub</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6200ea, #03dac6);
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        /* Game Grid */
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: #1e1e1e;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, border 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border: 2px solid #03dac6;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #03dac6;
+        }
+
+        /* Game Specific Colors */
+        .minecraft { border-bottom: 5px solid #48ad39; }
+        .brawlstars { border-bottom: 5px solid #f3ae1a; }
+        .roblox { border-bottom: 5px solid #00a2ff; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #6200ea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #7c4dff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gary's Gaming World</h1>
+        <p>Welcome to my official corner of the internet!</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>Hey! I'm Gary. I spend most of my time building epic structures, climbing the trophy road, and exploring user-generated worlds. If it's got blocks or brawlers, I'm probably playing it.</p>
+        </section>
+
+        <div class="game-grid">
+            <div class="card minecraft">
+                <h2>Minecraft</h2>
+                <p>From survival mode to creative builds, I love the endless possibilities of the sandbox.</p>
+                <div class="btn">View My Builds</div>
+            </div>
+
+            <div class="card brawlstars">
+                <h2>Brawl Stars</h2>
+                <p>Maining my favorite brawlers and pushing for rank 30. Catch me in Solo Showdown or Brawl Ball.</p>
+                <div class="btn">My Stats</div>
+            </div>
+
+            <div class="card roblox">
+                <h2>Roblox</h2>
+                <p>Exploring the best experiences on Roblox. I'm always looking for new games to try with friends.</p>
+                <div class="btn">Add Me</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Gary's Gaming Hub | Built with code & caffeine</p>
+    </footer>
+
+</body>
+</html>
